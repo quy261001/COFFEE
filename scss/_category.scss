@@ -1,0 +1,53 @@
+.category {
+  padding-bottom: 80px;
+  &-top{
+    position: relative;
+    text-align: center;
+    padding: 35px 0 0;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 32%;
+      height: 2px;
+      right: 34%;
+      bottom: 25%;
+      background: #ada9a0;
+    }
+    padding-bottom: 100px ;
+    background-color: #e2e1de;
+}
+  &-content{
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #756F63;
+}
+  &-desc{
+    font-family: 'avenir-light';  
+    font-size: 15px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #756f63;
+}
+  &-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 38px;
+}
+  &-card-image{
+    max-width: 196px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+  &-card-desc{
+    font-size: 16px;
+    color: #756f63;
+    span {
+      background-color: #fff9c0;
+    }
+}
+}

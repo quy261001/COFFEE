@@ -1,0 +1,195 @@
+.header {
+  //header TOP
+  &-top{
+    position: relative;
+    width: 100%;
+    background-color:#333;  
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+  &-top-item{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 14%;
+  padding: 10px 16px;
+  background-color:#e2e1de;
+}
+  &-top-link{
+    position: relative;
+    color: #4e4a42;
+    text-decoration: none;
+    &:not(:last-child):after {
+      content: "";
+      position: absolute;
+      height: 26px;
+      width: 1px;
+      top: -8%;
+      left: 110%;
+      background-color: #333;
+    }
+}
+}
+
+// Header-container
+.header {
+  &-container{
+    background-color: #fff;
+}
+  &-nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 50%);
+    &-list{
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-right: 70px;
+    }
+}
+  &-nav-item{
+    // position: relative;
+    margin-left: 15px;
+}
+  &-nav-link{
+    color:#4e4a42;
+    font-size:17px;
+    width: 100%;
+    font-family: 'avenir-light';
+    &:hover {
+      color:#8b3a00;
+      transition: all .3s linear;
+    }
+}
+  &-image{
+    margin: 0 10px;
+}
+  &-image-item{
+    max-width: 134px;
+    max-height: 134px;
+    object-fit: cover;  
+    margin-right: 40px;
+}
+  &-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+  &-input-item{
+    max-width:180px;
+    border-radius: 4px; 
+}
+  &-search{
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    right: 0;
+}
+  &-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  &-icon-item{
+    position: relative;
+    font-size:28px;
+    color: #756f63;
+    &:hover {
+      color: rgb(62, 43, 5);  
+      transition: all 0.3 linear;
+    }
+    &:last-child:after {
+      font-size: 14px;
+      color: #fff;
+      content: "0";
+      position: absolute;
+      top: 47%;
+      right: -26%;
+      width:20px;
+      height: 20px;
+      border-radius:50%;
+      text-align: center;
+      background-color:#8B3A00;
+    }
+}
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    animation: fade 0.2s ease-in;
+  }
+  @keyframes fade {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+}
+.header-nav-contact {
+  position: absolute;
+  background-color: #fff;
+  top: 185%;
+  left: -4%;
+  z-index: 1000;
+  display: none;
+}
+.header-contact-item:first-child {
+  padding:8px 0;
+  background-color:#333;
+  text-align: center;
+}
+.header-contact-item:not(:first-child) {
+  position: relative;
+  text-align: center;
+  padding:8px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    background: #4e4a42;
+  }
+}
+.header-contact-links {
+  font-family: 'Playfair Display', serif;
+  font-size:18px;
+  line-height: 2;
+  padding: 5px 35px;
+  color:#fff;
+  &:after {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 19px;
+    background: url(https://www.neighborscoffeeroasters.com/wp-content/uploads/2017/06/uparrow.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -4%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+  }
+}
+.header-contact-link {
+  font-family: 'Playfair Display', serif;
+  font-size:18px;
+  line-height: 2;
+  padding: 5px 35px;
+  color:#4e4342;
+}
+.is-show {
+  display:block;
+}

@@ -1,0 +1,10 @@
+.blends {
+  background-color:#c5c4c1;
+  padding-bottom: 34px;
+  &-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap: 54px;
+  }
+}

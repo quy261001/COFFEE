@@ -1,0 +1,11 @@
+mixin flavorsCard(image,title, price)
+  .flavors-card 
+    img.flavors-image.global-card-image(srcset=image, alt="")
+    .favors-title.global-card-title= title
+    .favors-desc.global-card-price= price
+
+mixin blendsCard(blendsImage,blendsTitle, blendsPrice)
+   .blends-card 
+      img.global-card-image(srcset=blendsImage, alt="")
+      .global-card-title= blendsTitle
+      .global-card-price= blendsPrice    

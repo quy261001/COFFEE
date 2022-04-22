@@ -1,0 +1,118 @@
+.login {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login-container {
+  position: relative;
+}
+.login-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150vh;
+  width: 100%;
+}
+.login-grid {
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 74%;
+  height: 80%;
+  background-color: #fff;
+}
+.login-list {
+  margin-top: 55px;
+  color: #000;
+  padding: 24px 0 21px;
+  border-top: 2px solid rgba(117, 111, 99, 1);
+  border-bottom: 2px solid rgba(117, 111, 99, 1);
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.login-table {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 70px;
+}
+.login-address { 
+  position: relative;
+  width: 400px;
+  border: 1px solid #d3ced2;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
+}
+.login-title {
+  padding:10px 30px;
+  span {
+    color: red;
+  }
+}
+.login-input {
+  width:100%;
+  border: solid 1px #cbc9c9;
+  margin: 0 10px;
+}
+.login-user {
+  padding: 10px 0;
+}
+.login-remember {
+  padding: 15px;
+  position: relative;
+  span {
+    padding-left: 30px;
+  }
+}
+.login-btn {
+  font-size: 90%;
+    margin: 0 8px 0 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: 0.618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: #515151;
+    background-color: #ebe9eb;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:hover {
+    background-color: #dfdcde;
+    text-decoration: none;
+    background-image: none;
+    color: #515151;
+    }
+}
+.login-checkbox {
+  position: absolute;
+  font-size: 12px;
+  height: 18px;
+  top: 34%;
+  right: 62%;
+}
+.login-lost {
+  padding: 10px;
+}
+
+.login-slogan {
+  position: absolute;
+  top: -18%;
+  left: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #756f63;
+}

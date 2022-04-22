@@ -1,0 +1,40 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.global-content {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 400;
+  display: block;
+  color: #756f63;
+  max-width: 30%;
+  margin-left: 34%;
+  text-align: center;
+  padding-top: 24px;
+}
+.global-desc {
+    font-family: 'avenir-light';
+    font-size: 16px;
+    line-height: 24px;
+    color: #756f63;
+    padding: 0 0 25px;
+    text-align: center;
+}
+.global-card-image {
+  max-width: 256px;
+  object-fit: cover;
+}
+.global-card-title {
+  font-size: 20px;
+  color: #8b3a00;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 15px 0 10px;
+}
+.global-card-price {
+  color: #756f63;
+  font-size: 16px;
+}
+

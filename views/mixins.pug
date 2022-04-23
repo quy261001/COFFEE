@@ -9,3 +9,9 @@ mixin blendsCard(blendsImage,blendsTitle, blendsPrice)
       img.global-card-image(srcset=blendsImage, alt="")
       .global-card-title= blendsTitle
       .global-card-price= blendsPrice    
+
+mixin shopCard(shopImage, shopDesc, shopQuantity )
+  .shop-card 
+        img.shop-card-image(srcset=shopImage, alt="")
+        .shop-card-desc= shopDesc
+          span= shopQuantity

@@ -15,3 +15,8 @@ mixin shopCard(shopImage, shopDesc, shopQuantity )
         img.shop-card-image(srcset=shopImage, alt="")
         .shop-card-desc= shopDesc
           span= shopQuantity
+mixin bestsellersCard(bestsellerImage, bestsellerDesc, bestsellersPrice)          
+  .bestsellers-card 
+        img.bestsellers-card-image(srcset=bestsellerImage, alt="")
+        .bestsellers-card-desc= bestsellerDesc
+        span.bestsellers-card-price= bestsellersPrice 

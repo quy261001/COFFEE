@@ -37,4 +37,30 @@
   color: #756f63;
   font-size: 16px;
 }
-
+.global-container {
+  position: relative;
+  max-height:462px;
+}
+.global-image {
+  position:absolute;
+  z-index: -1;
+  width: 100%;
+  max-height:300px;
+  object-fit: cover;
+}
+.global-main {
+  z-index: 10;
+  margin:  140px 100px 0 100px;
+  background-color: #fff;  
+  padding-top: 30px;
+}
+.global-title {
+  color: #000;
+  padding: 21px 0 18px;
+  border-top: 2px solid rgba(117, 111, 99, 1);
+  border-bottom: 2px solid rgba(117, 111, 99, 1);
+  text-transform: uppercase;
+  margin: 42px 56px ;
+  font-size: 34px;
+  font-weight:800;
+}

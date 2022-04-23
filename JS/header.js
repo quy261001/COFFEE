@@ -39,17 +39,17 @@ window.addEventListener("scroll", debounceFn(function(e) {
 }, 50));
 
 //display SHOP
-const mouseShop = document.querySelector(".header-link-shop");
-const headerContact = document.querySelector(".header-nav-contact");
-mouseShop.addEventListener("mousemove", debounceFn(function(e) {
-  console.log(e.target)
-   if(e.target.contains(e.target)) {
-    headerContact.classList.add("is-show");
-   }
-},100));
-mouseShop.addEventListener("mouseleave", debounceFn(function(e) {
-    headerContact.classList.remove("is-show");
-},100));
+// const mouseShop = document.querySelector(".header-link-shop");
+// const headerContact = document.querySelector(".header-nav-contact");
+// mouseShop.addEventListener("mousemove", debounceFn(function(e) {
+//   console.log(e.target)
+//    if(e.target.contains(e.target)) {
+//     headerContact.classList.add("is-show");
+//    }
+// },100));
+// mouseShop.addEventListener("mouseleave", debounceFn(function(e) {
+//     headerContact.classList.remove("is-show");
+// },100));
 // CLICK 
   const headerLink = document.querySelectorAll(".header-nav-link");
   [...headerLink].forEach(item => item.addEventListener("click", function(e) {

@@ -137,9 +137,10 @@
 .header-nav-contact {
   position: absolute;
   background-color: #fff;
-  top: 185%;
-  left: -4%;
+  top: 145%;
+  left: -241%;
   z-index: 1000;
+  width: 250px;
   display: none;
 }
 .header-contact-item:first-child {
@@ -179,8 +180,12 @@
     position: absolute;
     top: -4%;
     margin: 0 auto;
-    left: 0px;
-    right: 0px;
+    left: 47%;
+    right: 0px 127px;
+  }
+  &:hover {
+    color: #8b3a00;
+    transition: all 0.2s linear;
   }
 }
 .header-contact-link {
@@ -189,7 +194,17 @@
   line-height: 2;
   padding: 5px 35px;
   color:#4e4342;
+  &:hover {
+    color: #8b3a00;
+    transition: all 0.2s linear;
+  }
 }
 .is-show {
-  display:block;
+  //display:block;
+}
+.header-nav-shop  {
+  position: relative;
+  &:hover .header-nav-contact {
+    display: block;
+  }
 }

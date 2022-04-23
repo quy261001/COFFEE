@@ -20,3 +20,9 @@ mixin bestsellersCard(bestsellerImage, bestsellerDesc, bestsellersPrice)
         img.bestsellers-card-image(srcset=bestsellerImage, alt="")
         .bestsellers-card-desc= bestsellerDesc
         span.bestsellers-card-price= bestsellersPrice 
+
+mixin globalsCard(globalsImage, globalsDesc, globalsPrice)          
+  .globals-card 
+      img.globals-card-image(srcset=globalsImage, alt="")
+      .globals-card-desc= globalsDesc
+      span.globals-card-price= globalsPrice         

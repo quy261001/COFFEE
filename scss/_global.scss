@@ -64,3 +64,105 @@
   font-size: 34px;
   font-weight:800;
 }
+
+
+// sài chung
+.globals-synthetic {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.globals-top {
+  position: relative;
+}
+.global-top-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250vh;
+  width: 100%;
+  z-index: -1000;
+}
+.globals-view {
+  padding: 0 12px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83%;
+  height: 80%;
+}
+.globals-choose {
+  display: flex;
+  align-items: center;  
+}
+.globals-choose-title {
+  max-width:50px;
+  color: red;
+  margin-right: 10px;
+  font-weight: 700;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.globals-choose-view {
+  margin: 0 5px 0 0;
+  &:hover {
+    opacity: .5;
+    transition: all 0.25s linear;
+    cursor: pointer;
+  }
+}
+.globals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.globals-card-image {
+  max-width: 225px;
+  object-fit: cover;
+  height: 230px;
+}
+.globals-card-desc {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 18px;
+  padding: 15px 0 22px;
+  font-weight: 700;
+}
+.globals-card-price {
+  color: #fff;
+}
+.globals-card {
+  padding-top: 30px;
+}
+.globals-Quantity  {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.quantity-item-links {
+  color: #000;
+  padding: 12px 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height:0.6;
+  font-size:17px;
+}
+
+.quantity-item-link {
+  color: #fff;
+  padding: 12px 17px;
+  border-radius: 50%;
+  background-color: #000;
+  line-height:0.6;
+  font-size:17px;
+  &:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+}
+.globals-icon {
+  font-size:12px;
+}

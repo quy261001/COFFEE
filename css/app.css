@@ -154,12 +154,13 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .globals-choose-title {
   max-width: 50px;
-  color: red;
+  color: greenyellow;
   margin-right: 10px;
   font-weight: 700;
 }
 .globals-choose-title:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .globals-choose-view {
@@ -188,6 +189,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 18px;
   padding: 15px 0 22px;
   font-weight: 700;
+  max-width: 250px;
 }
 
 .globals-card-price {
@@ -415,10 +417,6 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   left: 47%;
   right: 0px 127px;
-}
-.header-contact-links:hover {
-  color: #8b3a00;
-  transition: all 0.2s linear;
 }
 
 .header-contact-link {
@@ -1189,7 +1187,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
-s .shop-grid {
+.shop-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-left: 56px;
@@ -1404,6 +1402,12 @@ s .shop-grid {
 
 .bestsellers-flavored {
   margin-bottom: 20px;
+}
+
+.flavored-link:hover {
+  background-color: #000;
+  cursor: inherit;
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

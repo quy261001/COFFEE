@@ -41,3 +41,4 @@ window.addEventListener("scroll", debounceFn(function(e) {
   [...headerLink].forEach(item => item.addEventListener("click", function(e) {
     e.target.style.color = "#8b3a00"
   }))
+  

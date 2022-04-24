@@ -97,11 +97,12 @@
 }
 .globals-choose-title {
   max-width:50px;
-  color: red;
+  color: greenyellow;
   margin-right: 10px;
   font-weight: 700;
   &:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
 }
 .globals-choose-view {
@@ -127,6 +128,7 @@
   line-height: 18px;
   padding: 15px 0 22px;
   font-weight: 700;
+  max-width: 250px;
 }
 .globals-card-price {
   color: #fff;

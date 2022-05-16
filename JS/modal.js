@@ -1,7 +1,8 @@
-const flavorsCard = document.querySelectorAll(".global-card-image");
+const flavorsImage = document.querySelectorAll(".global-card-image");
 const globalTitle = document.querySelectorAll(".global-card-title");
+const flavorsCard = document.querySelectorAll(".flavors-card");
  [...globalTitle].forEach(item => console.log(item));
-[...flavorsCard].forEach(item => item.addEventListener("click",function(e) {
+[...flavorsImage].forEach(item => item.addEventListener("click",function(e) {
   // console.log(flavorsCard)
   const image = e.target.getAttribute("srcset");
   const template = `<div class="globals-modal"> 
@@ -44,4 +45,7 @@ document.body.addEventListener("click", function(e) {
     const globalCategory = document.querySelector(".globalcard-category");
     globalCategory.classList.toggle("is-show");
   }
-})
+});
+[...flavorsCard].forEach(item => item.addEventListener("click", function(e) {
+  console.log(e.target)
+}))
